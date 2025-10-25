@@ -1,0 +1,12 @@
+# Compiled class files
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# NetBeans-specific directories and files
+/nbproject/private/
+/build/
+/dist/
