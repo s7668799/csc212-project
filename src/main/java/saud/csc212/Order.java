@@ -33,7 +33,10 @@ public class Order {
         return products;
     }
     
-
+public void addProduct(Product product) {
+    // This tells the order's internal 'products' list to insert the new product.
+    this.products.insert(product);
+}
   
     public String toString() {
         return "Order{" +
