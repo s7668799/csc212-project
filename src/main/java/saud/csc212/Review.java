@@ -6,7 +6,7 @@ public class Review {
     
     private int reviewId;
     private int productId;
-    private int customerId; // Absolutely necessary!
+    private int customerId; 
     private int rating;
     private String comment;
 
@@ -18,7 +18,7 @@ public class Review {
         this.comment = comment;
     }
 
-    // --- Getters ---
+
 
     public int getCustomerId() {
         return customerId;
@@ -27,7 +27,14 @@ public class Review {
     public int getRating() {
         return rating;
     }
-    
+    // In Review.java
+public void setRating(int rating) {
+    this.rating = rating;
+}
+
+public void setComment(String comment) {
+    this.comment = comment;
+}
    
     public String toString() {
         return "Review{" +

@@ -16,8 +16,6 @@ public class Product {
         this.reviews = new LinkedList<>(); // CRITICAL: Initialize the list!
     }
 
-    // --- Getters and Setters ---
-    // You need these to access and modify private fields.
 
     public int getProductId() {
         return productId;

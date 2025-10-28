@@ -4,10 +4,10 @@ package saud.csc212;
 
 public class Order {
     private int orderId;
-    private Customer customer; // A direct reference to a Customer object
-    private LinkedList<Product> products; // References to Product objects
+    private Customer customer; 
+    private LinkedList<Product> products; 
     private double totalPrice;
-    private String orderDate; // Or you can use String if date logic is simple
+    private String orderDate; 
     private String status;
 
     public Order(int orderId, Customer customer, double totalPrice, String orderDate, String status) {
@@ -16,10 +16,10 @@ public class Order {
         this.totalPrice = totalPrice;
         this.orderDate = orderDate;
         this.status = status;
-        this.products = new LinkedList<>(); // CRITICAL: Initialize the list!
+        this.products = new LinkedList<>(); 
     }
 
-    // --- Getters and a method to add products ---
+
     
     public int getOrderId() {
         return orderId;
@@ -32,12 +32,16 @@ public class Order {
     public LinkedList<Product> getProducts() {
         return products;
     }
-    
+    public void setTotalPrice(double d){ this.totalPrice = d ;}
+   public void setStatus(String d){ this.status = d ;}  
 public void addProduct(Product product) {
-    // This tells the order's internal 'products' list to insert the new product.
+    
     this.products.insert(product);
 }
-  
+public String getOrderDate() {
+    return this.orderDate;
+}
+  public String getStatus(){return status;}
     public String toString() {
         return "Order{" +
                "id=" + orderId +

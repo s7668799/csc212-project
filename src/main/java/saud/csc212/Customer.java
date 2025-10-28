@@ -12,10 +12,10 @@ public class Customer {
         this.customerId = customerId;
         this.name = name;
         this.email = email;
-        this.orders = new LinkedList<>(); // CRITICAL: Initialize the list!
+        this.orders = new LinkedList<>();
     }
 
-    // --- Getters ---
+  
 
     public int getCustomerId() {
         return customerId;
